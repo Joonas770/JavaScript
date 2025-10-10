@@ -153,13 +153,13 @@
          comment = document.querySelector("#comment").value
          console.log("Nimi: " + name + " Email: " + email + " Comment: " + comment)
 
-            if (name.length === ""){
+            if (name === ""){
                 alert("Nimi ei saa olla tyhjä")
             }
             else if (email.length < 6 || email.length > 15 || !email.includes("@")){
                 alert("Sähköpostiosoitteen tulee olla vähintään 6 merkkiä ja alle 15 merkkiä pitkä ja sisältää @ merkin.")
             }
-            else if (comment.length === "" || comment.length > 150 ){
+            else if (comment === "" || comment.length > 150 ){
                 alert("Kommenttikenttä ei saa olla tyhjä, ja sen pituus saa olla enintään 150 merkkiä.")
             }
             localStorage.setItem('etunimi', name)
